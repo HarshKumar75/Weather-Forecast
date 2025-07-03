@@ -11,7 +11,7 @@ export default function Weather() {
     setLoading(true);
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/forecast?q=${param}&appid=897ffd5fc259f8f96678c851d4a43cc9`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${param}&appid`
       );
 
       const data = await response.json();
